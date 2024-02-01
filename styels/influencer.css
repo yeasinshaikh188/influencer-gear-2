@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+}
+header {
+   max-width: 1350px;     
+    border: 2px solid rebeccapurple;
+    padding: 40px;
+}
+
+/* banner styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+.img {
+    width: 30px;
+    margin-left: 10px;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+}
+.banner-title{
+    font-size: 70px;
+}
+.banner-description{
+    font-size: 20px;
+    margin: 30px;
+}
+.btn-primary{
+    width: 140px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    margin: 30px;
+}
+
+/* responsive mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        width: 100%;
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+
+    
+}
